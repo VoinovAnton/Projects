@@ -60,7 +60,8 @@ class Slot:
 
     def lines(self, reel1, reel2, reel3):
         reels = [reel1, reel2, reel3]
-        print(reels)
+        for reel in reels:
+            print(reel)
         self.counter = 0
         if reels[0][0] == reels[1][0]:
             self.counter += 1
